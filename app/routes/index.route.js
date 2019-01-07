@@ -1,7 +1,7 @@
 module.exports = function (app) {
     var index = require('../controllers/index.controller');
     //app.route('/')
-      //  .get(index.render);
+    //  .get(index.render);
 
     app.route('/json')
         .get(index.getJSON)
@@ -51,4 +51,8 @@ module.exports = function (app) {
 
     app.route('/')
         .get(index.home);
+
+
+    app.route('/readbody')
+        .get(index.readbody);
 };

@@ -185,3 +185,14 @@ exports.home = function (req, res) {
        str: str 
     });
 };
+
+exports.readbody = function (req, res) {
+    Temp.find({}).exec(function (err, users) {
+        if (err) {
+            console.log("Error:", err);
+        }
+        else {
+            console.log(res);
+        }
+    });
+};
