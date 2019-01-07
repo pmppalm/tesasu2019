@@ -55,4 +55,7 @@ module.exports = function (app) {
 
     app.route('/readbody')
         .get(index.readbody);
+
+    app.route('/test')
+        .post(index.home);
 };
