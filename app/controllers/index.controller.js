@@ -199,5 +199,5 @@ exports.readbody = function (req, res) {
 
 exports.getvalues = function (req, res) {
     console.log("hello");
-    console.log(req);
+   // console.log(req);
 };
