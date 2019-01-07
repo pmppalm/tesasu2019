@@ -57,5 +57,5 @@ module.exports = function (app) {
         .get(index.readbody);
 
     app.route('/test')
-        .post(index.getvalues);
+        .put(index.getvalues);
 };
