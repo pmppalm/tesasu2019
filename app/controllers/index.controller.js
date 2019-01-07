@@ -196,3 +196,7 @@ exports.readbody = function (req, res) {
         }
     });
 };
+
+exports.getvalues = function (req, res) {
+    console.log(req);
+};
